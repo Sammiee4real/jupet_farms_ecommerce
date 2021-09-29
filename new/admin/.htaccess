@@ -1,0 +1,19 @@
+Options All -Indexes
+
+
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+
+
+ErrorDocument 400 http://localhost/comscience/error.html
+ErrorDocument 401 http://localhost/comscience/error.html
+ErrorDocument 402 http://localhost/comscience/error.html
+ErrorDocument 403 http://localhost/comscience/error.html
+ErrorDocument 404 http://localhost/comscience/error.html
+ErrorDocument 405 http://localhost/comscience/error.html
+ErrorDocument 500 http://localhost/comscience/error.html
+
